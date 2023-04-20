@@ -20,15 +20,16 @@ public class menu_screen extends JFrame implements ActionListener
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
 		setLayout(null);
 		setResizable(false);
-		setTitle("Prison Managemet System");
+		setTitle("Kenya Prison Management System");
 		setLocation(300,20);
 		getContentPane().setBackground(Color.white);
 		setIconImage (getToolkit().getImage ("prisoner.png"));
 		
-		imgprisoner = new ImageIcon("prisoner.png");
-		imgwarden = new ImageIcon("warden.png");
-		report = new ImageIcon("report.png");
-		imgprison = new ImageIcon("prison.jpg");
+		imgprisoner = new ImageIcon("handcuffs.png");
+		imgwarden = new ImageIcon("police.png");
+		report = new ImageIcon("edit.png");
+
+		imgprison = new ImageIcon("Kenya-Prisons.jpg");
 		//Font Initialising 
 		fnt_first = new Font("Cambria",Font.BOLD,30);
 		
@@ -73,7 +74,7 @@ public class menu_screen extends JFrame implements ActionListener
 		Line3.setBounds(20,510,780,40);
 		Line3.setForeground(Color.orange);
 		
-		name = new JLabel("Created By Anonymous");
+		name = new JLabel("Created By Austin Oketch and Steven Ochan");
 		add(name);
 		name.setBounds(300,530,780,40);
 		name.setForeground(Color.orange);

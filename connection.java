@@ -8,11 +8,16 @@ public class connection
 	
 	public void open()
 	{
+		String url = "jdbc:mysql://localhost:3306/prison";
+		String user_name = "root";
+		String password = "lovesosa";
 		try
 		{
 			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-			con = DriverManager.getConnection("jdbc:odbc:prison_management");
-			stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY); 
+			con = DriverManager.getConnection(url,user_name,password);
+			stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+
+
 		}
 		catch(Exception e)
 		{
