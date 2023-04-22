@@ -9,7 +9,7 @@ public class menu_screen extends JFrame implements ActionListener
 	//.............Navigational Buttons............
 
 	JButton btnprison, btnwarden, btncheck_prison, btnwarden_report;
-	JLabel Title, Line, Line2, Line3, pimg, name;
+	JLabel Title,pimg, name;
 	Font fnt_first;
 	Icon imgprisoner, imgwarden, report, imgprison;
 	int i, x = 50;
@@ -31,7 +31,7 @@ public class menu_screen extends JFrame implements ActionListener
 
 		imgprison = new ImageIcon("Kenya-Prisons.jpg");
 		//Font Initialising 
-		fnt_first = new Font("Cambria",Font.BOLD,30);
+		fnt_first = new Font("San-Serif",Font.BOLD,30);
 		
 		// Initialising the Buttons And Label
 		btnprison = new JButton("Prisoner",imgprisoner);			
@@ -39,21 +39,13 @@ public class menu_screen extends JFrame implements ActionListener
 		btncheck_prison = new JButton("Prisoner Report",report);
 		btnwarden_report = new JButton("Warden Report",report);
 		
-		Title = new JLabel("Prison Managment System");
+		Title = new JLabel("Kenya Prison Managment System");
 		add(Title);
-		Title.setBounds(220,15,400,40);
+		Title.setBounds(120,15,600,40);
 		Title.setFont(fnt_first);
-		Title.setForeground(Color.orange);
+		Title.setForeground(Color.red);
 		
-		Line = new JLabel("________________________________________________________________________________________________________");
-		add(Line);
-		Line.setBounds(20,50,780,40);
-		Line.setForeground(Color.orange);
-		
-		Line2 = new JLabel("________________________________________________________________________________________________________");
-		add(Line2);
-		Line2.setBounds(20,115,780,40);
-		Line2.setForeground(Color.orange);
+
 		
 		JButton btn_main [] = {btnprison,btnwarden,btncheck_prison,btnwarden_report}; 
 		for (int i = 0 ; i < 4 ; i++)
@@ -69,15 +61,12 @@ public class menu_screen extends JFrame implements ActionListener
 		add(pimg);
 		pimg.setBounds(85,140,600,400);
 		
-		Line3 = new JLabel("________________________________________________________________________________________________________");
-		add(Line3);
-		Line3.setBounds(20,510,780,40);
-		Line3.setForeground(Color.orange);
+
 		
 		name = new JLabel("Created By Austin Oketch and Steven Ochan");
 		add(name);
-		name.setBounds(300,530,780,40);
-		name.setForeground(Color.orange);
+		name.setBounds(250,530,780,40);
+		name.setForeground(Color.red);
 		
 	}
 public void actionPerformed(ActionEvent ae)
